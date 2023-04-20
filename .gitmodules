@@ -1,0 +1,6 @@
+[submodule "src/hugo-fresh"]
+	path = src/themes/github.com/StefMa/hugo-fresh
+	url = https://github.com/StefMa/hugo-fresh.git
+[submodule "src/themes/bulma"]
+	path = src/themes/github.com/jgthms/bulma
+	url = https://github.com/jgthms/bulma.git

@@ -1,0 +1,45 @@
+name: Compile Hugo Pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main # Set a branch to deploy
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        run: |
+          sudo apt install hugo
+
+      - name: Build
+        run: cd src && hugo -D -d "../docs" -b "https://devopera-ai.github.io/" && cd ..
+
+      # - name: Clean files
+      #   run: |
+      #       cd src && rm ../docs/index.html
+      #       rm ../docs/index.xml
+      #       cp ../docs/blog/index.xml ../docs/index.xml
+      #       cp ../docs/blog/index.html ../docs/index.html
+
+      - name: Commit files
+        run: |
+          git config --local user.email "92151357+kalagiri-bot@users.noreply.github.com"
+          git config --local user.name "Octavius [bot]"
+          git commit -m "[skip ci] Compiled hugo site" -a
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GH_TOKEN }}
+          branch: ${{ github.ref }}
