@@ -1,12 +1,6 @@
 name: Mirror to a Private Repo
 
-on:
-  workflow_dispatch:
-  push:
-  delete:
-  create:
-
-# on: [ push, delete, create, workflow_dispatch ]
+on: [ push, delete, create, workflow_dispatch, workflow_call ]
 
 # Ensures that only one mirror task will run at a time.
 concurrency:
