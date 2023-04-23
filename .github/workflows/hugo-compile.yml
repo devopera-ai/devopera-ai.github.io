@@ -23,7 +23,7 @@ jobs:
           sudo apt install hugo
 
       - name: Build
-        run: cd src && hugo -D -d "../docs" -b "https://devopera-ai.github.io/" && cd ..
+        run: cd src && hugo -D -d "../docs" -b "https://temp.devopera.ai/" && cd ..
 
       # - name: Clean files
       #   run: |
