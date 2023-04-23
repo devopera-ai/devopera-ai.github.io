@@ -174,8 +174,8 @@ params:
     title: Connect with us
     subtitle:  Join Our Waitlist, Request a Demo, and More.
     buttonText: Send Message
-    # action: https://formspree.io/f/<form_id>
-    # method: POST
+    action: https://formspree.io/f/mrgvrypl
+    method: POST
   footer:
     # Logo (from /images/logos/___)
     logo: logo_white.png # fresh-white-alt.svg
