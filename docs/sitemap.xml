@@ -1,7 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://temp.devopera.ai/</loc>
-  </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+        <loc>https://devopera.ai/contacts.html</loc>
+    </url>
+    <url>
+        <loc>https://devopera.ai/features.html</loc>
+    </url>
+    <url>
+        <loc>https://devopera.ai/</loc>
+    </url>
+    <url>
+        <loc>https://devopera.ai/integrations.html</loc>
+    </url>
+    <url>
+        <loc>https://devopera.ai/pricing.html</loc>
+    </url>
 </urlset>
