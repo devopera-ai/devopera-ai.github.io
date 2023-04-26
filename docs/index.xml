@@ -5,10 +5,6 @@
     <link>https://temp.devopera.ai/</link>
     <description>Recent content on DevOpera</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://temp.devopera.ai/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://temp.devopera.ai/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
